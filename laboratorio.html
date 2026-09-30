@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Man in the Middle - Definición</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header id="cabecera">
+        <div class="top-bar">
+            <h1>Man in the Middle - Laboratorio</h1>
+            <a href="index.html" class="volver">
+                Regresar al menú
+            </a>
+        </div>
+    </header>
+    <main id="contenido">
+        <section>
+            <h2>Creación del hostpot en kali</h2>
+            <p>
+                Se creó una red Wi-Fi de laboratorio desde la maquina kali. La interfaz wlan0 se configuró como punto de acceso y permitir la conexión del celular. 
+                <img src="imagenes/Lab1.png" class="imagen-info">
+            </p>
+            <h2>Identificación de hosts</h2>
+            <p>
+                Con "ip addr" se identificó la dirección IP de la maquina kali. Y con "ip neigh" se identificó el dispositivo conectado y su respectiva mac.
+                <img src="imagenes/Lab6.png" class="imagen-info">
+            </p>
+            <h2>Comprobación de comunicación</h2>
+            <p>
+                Se comprobó la conectividad entre kali y el dispositivo mediante un ping.
+                <img src="imagenes/Lab7.png" class="imagen-info">
+            </p>
+            <h2>Captura del tráfico del dispositivo</h2>
+            <p>
+                Mediante Wireshark se aplicó un filtro utilizando la dirección ip, Se observoo paquetes TCP, DNS e ICMP generados por este mismo. Debido a la falta de internet algunas respuestas dicen Network unreachable.
+                <img src="imagenes/Lab8.png" class="imagen-info">
+            </p>
+            <h2>Obbservamos el funcionamiento de ARP</h2>
+            <p>
+                Wireshark permitió observar el funcionamiento del protocolo ARP.
+                <img src="imagenes/Lab2.png" class="imagen-info">
+            </p>
+            <h2>Activamos el IPv4 Forwarding</h2>
+            <p>
+                Se habilitó el reenvío IPv4. Permitiendo que el sistema Linux reenvíe paquetes entre redes o interfaces.
+                <img src="imagenes/Lab4.png" class="imagen-info">
+            </p>
+        </section>
+    </main>
+    <footer id="pie">
+        <p>
+            2026 - Man in the Middle
+        </p>
+    </footer>
+</body>
+</html>

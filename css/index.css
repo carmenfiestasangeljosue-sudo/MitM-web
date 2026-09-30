@@ -1,0 +1,164 @@
+body{
+    background-color: #1a1d20;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #2b2b2b;
+    padding: 1px 0;
+}
+
+header img{
+    width: 200px;
+    height: auto;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+h1 {
+    color: #eee;
+    font-style: italic;
+    font-size: 40px;
+    margin: 0;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    color: rgb(238, 238, 238);
+    padding: 5%;
+    background-image: url(images/main-fondo.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.opcion{ 
+    display:flex; 
+    flex-direction:column; 
+    align-items:center;
+    gap: 15px;
+}
+
+.opcion p{
+    margin: 0;
+    color: #ffd700;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.opcion img {
+    width: 180px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.opcion img:hover {
+    transform: scale(1.1);
+}
+
+.abrirLB{ 
+    text-decoration:none; 
+} 
+
+.lightbox{ 
+    display:none 
+} 
+
+.lightbox:target{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    background-color:rgba(0,0,0,0.56); 
+    width: 100%; 
+    height: 100%; 
+} 
+
+.contenido{ 
+    display:flex; 
+    flex-direction:column; 
+    align-items:center;
+    gap: 10px;
+}
+
+.contenido p{
+    margin: 0;
+    color: #ffd700;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrarLB{
+    align-self:flex-end;
+    color:white; 
+    text-decoration:none; 
+}
+
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+}
+
+footer span {
+    display: block;
+    margin: 3px 0;
+}
+
+@media (max-width: 600px) {
+
+    header img {
+        width: 130px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .opcion img {
+        width: 140px;
+    }
+
+    .contenido img {
+        width: 280px;
+        max-width: 90vw;
+        height: auto;
+    }
+
+    .contenido p {
+        font-size: 22px;
+    }
+
+    .cerrarLB {
+        font-size: 18px;
+        margin-right: 5%;
+    }
+}
